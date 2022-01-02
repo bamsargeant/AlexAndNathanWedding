@@ -7,22 +7,43 @@
     justify-content-center
     align-items-center
     scroll-snap-container
+    transition-0-65
   "
   [ngClass]="{ collapsed: isCollapsed() }"
 >
-  <div class="mw-100 bg-gold-gradient shadow-black mx-3 mx-md-5 transition-0-65" [ngClass]="{ 'py-2 px-3 rounded-4': isCollapsed(), 'p-5 rounded-6': !isCollapsed() }">
+  <div
+    class="mw-100 mx-2 mx-md-4 bg-gold-gradient p-1 shadow-black transition-0-65"
+    [ngClass]="{ 'rounded-4': isCollapsed(), 'rounded-6': !isCollapsed() }"
+  >
     <!-- <div class="row" [ngClass]="{ 'row-cols-1': !isCollapsed() }"> -->
-    <div class="">
+    <div
+      class="shadow-black transition-0-65 bg-gold-gradient"
+      [ngClass]="{
+        'py-2 px-3 rounded-4': isCollapsed(),
+        'p-5 rounded-6': !isCollapsed()
+      }"
+    >
+      <div class="col-12 p-0">
+        <div
+          class="transition-0-65 h-0"
+          [ngClass]="{ 'h-1-rem': isCollapsed() }"
+        ></div>
+      </div>
+
       <div class="col-12 p-0">
         <img
-          src="../assets/images/portrait_formal.jpg"
+          src="https://bamsargeant.github.io/AlexAndNathanWedding/assets/images/portrait_formal.jpg"
           class="img-thumbnail rounded-circle mx-auto image-container"
           [ngClass]="{ collapsed: isCollapsed() }"
           alt="Alex & Nathan"
         />
       </div>
+
       <div class="col-12 p-0">
-        <div class="title-spacer" [ngClass]="{ collapsed: isCollapsed() }"></div>
+        <div
+          class="title-spacer"
+          [ngClass]="{ collapsed: isCollapsed() }"
+        ></div>
       </div>
 
       <div class="col-12 p-0 fadeIn">
@@ -31,7 +52,7 @@
         </h1>
 
         <!-- "Save the Date" Tengwar code: "8r#È @ 21DÊ" -->
-        <h1 class="text-white tengwar" [ngClass]="{ 'fs-2': isCollapsed() }">
+        <h1 class="text-white tengwar" [ngClass]="{ 'fs-0': isCollapsed() }">
           8r#È @ 21DÊ
         </h1>
       </div>
@@ -40,7 +61,7 @@
         <h2 class="text-white" [ngClass]="{ 'fs-3': isCollapsed() }">
           26<sup>th</sup> of November 2022
         </h2>
-        <h2 class="text-white tengwar" [ngClass]="{ 'fs-3': isCollapsed() }">
+        <h2 class="text-white tengwar" [ngClass]="{ 'fs-0': isCollapsed() }">
           òö3 W 5r^w$P6 òðòò
         </h2>
       </div>
