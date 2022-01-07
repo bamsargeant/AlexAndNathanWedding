@@ -30,7 +30,7 @@
               "src/favicon.ico",
               "src/assets",
               "src/web.config",
-              "CNAME"
+              "src/CNAME"
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
@@ -104,7 +104,7 @@
               "src/favicon.ico",
               "src/assets",
               "src/web.config",
-              "CNAME"
+              "src/CNAME"
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
