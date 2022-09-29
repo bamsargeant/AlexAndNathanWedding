@@ -1,4 +1,4 @@
-<div *ngIf="apiLoaded | async">
+<div *ngIf="apiLoaded | async" class="p-0 m-0">
   <google-map [center]="center" [zoom]="zoom">
     <map-marker
       *ngFor="let markerPosition of markerPositions"

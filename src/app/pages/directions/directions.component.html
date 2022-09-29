@@ -2,11 +2,13 @@
   <div class="px-3 py-4 w-100 bg-white shadow-lg rounded-4">
     <div class="d-flex flex-column justify-content-center align-items-center">
       <h1 class="text-center mb-1 mb-md-4">Directions</h1>
-      <div class="row gx-md-5 justify-content-center w-100">
-        <div class="col-12 col-md-auto order-last order-md-first">
-          <app-map></app-map>
+      <div class="row row-cols-1 row-cols-lg-2 gx-md-5 gy-4 gy-lg-0 justify-content-center w-100">
+        <div class="col order-last order-lg-first">
+          <div #parentContainer style="width: 100%">
+            <app-map [width]="parentContainer.clientWidth"></app-map>
+          </div>
         </div>
-        <div class="col-12 col-md">
+        <div class="col">
           <h2 class="text-center ff-open-sans fw-light mb-3 mb-md-5 pb-md-3">
             Ruby's Mount Kembla Restaurant
           </h2>
